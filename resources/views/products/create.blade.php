@@ -1,8 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+
     <div class="container">
         <form action="" method="post" enctype="multipart/form-data">
+            @csrf
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Название новости</label>
                 <input name="title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -20,4 +22,5 @@
             </div>
         </form>
     </div>
+
 @endsection

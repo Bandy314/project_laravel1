@@ -19,3 +19,4 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/products/add', [ProductController::class, 'create'])->name('products.add');
+Route::post('/products/add', [ProductController::class, 'create'])->name('products.welcome');
